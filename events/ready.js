@@ -12,6 +12,6 @@ module.exports = async (client) => {
     client.functions.log(`Sunucu: [${guild}]`, "READY");
     client.functions.log(`Kanal: [${channel}]`, "READY");
     client.functions.log(`Emoji: [${emojis}]`, "READY");
-    client.functions.log(`https://github.com/DevJustForever`, "READY");
     client.functions.log(`Rol: [${role}]`, "READY");
+    client.functions.log(`https://github.com/DevJustForever`, "READY");
 };
