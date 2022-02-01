@@ -5,7 +5,7 @@ const data = new SlashCommandBuilder()
     .setDescription("Bot'un gecikmesini gösterir.");
 module.exports.execute = async (client, interaction, db, config) => {
 
-    return interaction.reply({ content: Math.floor(client.ws.ping) });
+    return interaction.reply({ content: `${Math.floor(client.ws.ping)}`, ephemeral: true });
 
 
 };
