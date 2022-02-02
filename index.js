@@ -3,10 +3,10 @@ const fs = require("fs");
 const Path = require("path");
 const Discord = require("discord.js");
 const { Intents } = require("discord.js");
-const INTENS = Object.values(Intents.FLAGS);
+const INTENTS = Object.values(Intents.FLAGS);
 
 const client = global.client = new Discord.Client({
-intents: INTENS, /*[
+intents: INTENTS, /*[
         Intents.FLAGS.GUILDS,
         Intents.FLAGS.GUILD_MEMBERS,
         Intents.FLAGS.GUILD_BANS,

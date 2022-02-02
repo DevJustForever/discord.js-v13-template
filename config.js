@@ -1,8 +1,8 @@
 module.exports = {
 
     embed: {
-     color: "#fee10c",
-     footer: (footer) => `${footer.username} tarafından istedindi.`
+        color: "#fee10c",
+        footer: (footer) => `${footer.username} tarafından istedindi.`
     },
     emoji: {
 
