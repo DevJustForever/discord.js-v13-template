@@ -6,7 +6,7 @@ module.exports = async (client) => {
     let guild = client.guilds.cache.size;
     let channel = client.channels.cache.size;
     let emojis = client.emojis.cache.size;
-    let role = client.guilds.cache.reduce((a,b) => a + b.roles.cache.size, 0)
+    let role = client.guilds.cache.reduce((a, b) => a + b.roles.cache.size, 0)
     client.functions.log(`Kullanıcı: [${usersCountjust}]`, "READY");
     client.functions.log(`Kullanıcı: [${users2Count}]`, "READY");
     client.functions.log(`Sunucu: [${guild}]`, "READY");

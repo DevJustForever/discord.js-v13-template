@@ -6,7 +6,7 @@ const { Intents } = require("discord.js");
 const INTENTS = Object.values(Intents.FLAGS);
 
 const client = global.client = new Discord.Client({
-intents: INTENTS, /*[
+    intents: INTENTS, /*[
         Intents.FLAGS.GUILDS,
         Intents.FLAGS.GUILD_MEMBERS,
         Intents.FLAGS.GUILD_BANS,
@@ -88,7 +88,7 @@ db.on("ready", async () => {
 client.login(process.env.TOKEN || null).then((_) => {
     return client.functions.log("Token girişi başarılı.", "TOKEN_LOGIN");
 }).catch((e) => {
-return client.functions.log("Token girişi başarısız.", "TOKEN_LOGIN");
+    return client.functions.log("Token girişi başarısız.", "TOKEN_LOGIN");
 });
 
 
